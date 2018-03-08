@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- Fonts -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto" rel="stylesheet">
 
   <link rel="stylesheet" href="../assets/css/landingPage.css">
@@ -15,7 +15,7 @@
   <div id="landing-page">
    <header class="main-header">
      <nav>
-      <div class="nav-left">
+      <div class="flex-row nav-left">
         <div class="brand-name blue">
           <span><strong>brand</strong>zoos</span>
         </div>
@@ -30,17 +30,19 @@
           </ul>
         </div>
       </div>
-      <div class="nav-right">
+      <div class="flex-row nav-right">
         <button class="flat blue">the selected</button>
         <button class="raised bg-blue">get listed</button>
-        <button class="icon">icon</button>
+        <button class="icon blue">
+          <i class="fas fa-shopping-bag fa-2x"></i>
+        </button>
       </div>
      </nav>
    </header>
    <!-- end main-header -->
 
     <main>
-      <section class="flex-row flex-column flex-center jumbotron">
+      <section class="flex-column flex-center jumbotron">
         <div class="jumbotron-intro">
           <h4 class="primary-text">search for anything, anywhere.</h4>
           <p class="sub-text">discover only the best businesses</p>
@@ -48,7 +50,11 @@
         <div class="jumbotron-search">
           <input type="text" placeholder="Enter a search keyword">
           <select name="city" id="city">
+            <option value="none">Select city</option>
             <option value="abuja">abuja</option>
+            <option value="lagos">lagos</option>
+            <option value="port harcourt">port harcourt</option>
+            <option value="abia">abia</option>
           </select>
           <button class="raised bg-blue">search</button>
         </div>
@@ -56,130 +62,152 @@
       <!-- end jumbotron -->
 
       <section class="flex-column">
-        <header>
-          <h6>Trusted by major local and global brands</h6>
+        <header class="flex-column flex-center">
+          <hr class="bg-blue blue">
+          <h6 class="primary-text">Trusted by major local and global brands</h6>
         </header>
-        <article class="flex-column global">
-          <div class="flex-row flex-center brands-wrapper">
-            <a class="brand" href="#">
-              <div class="brand-image">
-                <img src="../assets/imgs/cocacola.png" alt="">
-              </div>
-            </a>
-            <a class="brand" href="#">
-              <div class="brand-image">
-                <img src="../assets/imgs/microsoft.png" alt="">
-              </div>
-            </a>
-            <a class="brand" href="#">
-              <div class="brand-image">
-                <img src="../assets/imgs/hp.png" alt="">
-              </div>
-            </a>
-            <a class="brand" href="#">
-              <div class="brand-image">
-                <img src="../assets/imgs/spar.png" alt="">
-              </div>
-            </a>
-            <a class="brand" href="#">
-              <div class="brand-image">
-                <img src="../assets/imgs/pampers.jpg" alt="">
-              </div>
-            </a>
-            <a class="brand" href="#">
-              <div class="brand-image">
-                <img src="../assets/imgs/cocacola.png" alt="">
-              </div>
-            </a>
-            <a class="brand" href="#">
-              <div class="brand-image">
-                <img src="../assets/imgs/microsoft.png" alt="">
-              </div>
-            </a>
-            <a class="brand" href="#">
-              <div class="brand-image">
-                <img src="../assets/imgs/hp.png" alt="">
-              </div>
-            </a>
-            <a class="brand" href="#">
-              <div class="brand-image">
-                <img src="../assets/imgs/spar.png" alt="">
-              </div>
-            </a>
-            <a class="brand" href="#">
-              <div class="brand-image">
-                <img src="../assets/imgs/pampers.jpg" alt="">
-              </div>
-            </a>
+        <article class="global">
+          <div class="brands-wrapper">
+            <div class="flex-row flex-center brands">
+              <a class="flex-column flex-center brand" href="#">
+                <div class="brand-image">
+                  <img src="../assets/imgs/cocacola.png" alt="">
+                </div>
+              </a>
+              <a class="flex-column flex-center brand" href="#">
+                <div class="brand-image">
+                  <img src="../assets/imgs/microsoft.png" alt="">
+                </div>
+              </a>
+              <a class="flex-column flex-center brand" href="#">
+                <div class="brand-image">
+                  <img src="../assets/imgs/hp.png" alt="">
+                </div>
+              </a>
+              <a class="flex-column flex-center brand" href="#">
+                <div class="brand-image">
+                  <img src="../assets/imgs/spar.png" alt="">
+                </div>
+              </a>
+              <a class="flex-column flex-center brand" href="#">
+                <div class="brand-image">
+                  <img src="../assets/imgs/pampers.jpg" alt="">
+                </div>
+              </a>
+              <a class="flex-column flex-center brand" href="#">
+                <div class="brand-image">
+                  <img src="../assets/imgs/cocacola.png" alt="">
+                </div>
+              </a>
+              <a class="flex-column flex-center brand" href="#">
+                <div class="brand-image">
+                  <img src="../assets/imgs/microsoft.png" alt="">
+                </div>
+              </a>
+              <a class="flex-column flex-center brand" href="#">
+                <div class="brand-image">
+                  <img src="../assets/imgs/hp.png" alt="">
+                </div>
+              </a>
+              <a class="flex-column flex-center brand" href="#">
+                <div class="brand-image">
+                  <img src="../assets/imgs/spar.png" alt="">
+                </div>
+              </a>
+              <a class="flex-column flex-center brand" href="#">
+                <div class="brand-image">
+                  <img src="../assets/imgs/pampers.jpg" alt="">
+                </div>
+              </a>
+            </div>
           </div>
         </article>
-        <!-- <article class="flex-row flex-column flex-center local">
-          <div class="flex-row flex-center brands-wrapper">
-            <a class="flex-row brand" href="#">
-              <div class="brand-image">
-                <img src="../assets/imgs/dangote.jpeg" alt="">
-              </div>
-              <div class="flex-row flex-column brand-details">
-                <span class="brand-details--name">dangote industries limited</span>
-                <div class="flex-row flex-column brand-details--location">
-                  <span>union marble house</span>
-                  <span>1 alfred rewane road, ikoyi</span>
-                  <span>lagos</span>
+        <article class="local">
+          <div class="flex-column flex-center brands-wrapper">
+            <div class="flex-row flex-center brands">
+              <a class="brand-wrapper" href="#">
+               <div class="flex-row brand">
+                  <div class="brand-image">
+                    <img src="../assets/imgs/dangote.jpeg" alt="">
+                  </div>
+                  <div class="flex-column brand-details">
+                    <span class="brand-details--name">dangote industries limited</span>
+                    <div class="flex-column brand-details--location">
+                      <span>union marble house</span>
+                      <span>1 alfred rewane road, ikoyi</span>
+                      <span>lagos</span>
+                    </div>
+                  </div>
+               </div>
+              </a>
+              <a class="brand-wrapper" href="#">
+                <div class="flex-row brand">
+                  <div class="brand-image">
+                    <img src="../assets/imgs/dangote.jpeg" alt="">
+                  </div>
+                  <div class="flex-column brand-details">
+                    <span class="brand-details--name">dangote industries limited</span>
+                    <div class="flex-column brand-details--location">
+                      <span>union marble house</span>
+                      <span>1 alfred rewane road, ikoyi</span>
+                      <span>lagos</span>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </a>
-            <a class="flex-row brand" href="#">
-              <div class="brand-image">
-                <img src="../assets/imgs/dangote.jpeg" alt="">
-              </div>
-              <div class="flex-row flex-column brand-details">
-                <span class="brand-details--name">dangote industries limited</span>
-                <div class="flex-row flex-column brand-details--location">
-                  <span>union marble house</span>
-                  <span>1 alfred rewane road, ikoyi</span>
-                  <span>lagos</span>
+              </a>
+              <a class="brand-wrapper" href="#">
+                <div class="flex-row brand">
+                  <div class="brand-image">
+                    <img src="../assets/imgs/dangote.jpeg" alt="">
+                  </div>
+                  <div class="flex-column brand-details">
+                    <span class="brand-details--name">dangote industries limited</span>
+                    <div class="flex-column brand-details--location">
+                      <span>union marble house</span>
+                      <span>1 alfred rewane road, ikoyi</span>
+                      <span>lagos</span>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </a>
-            <a class="flex-row brand" href="#">
-              <div class="brand-image">
-                <img src="../assets/imgs/dangote.jpeg" alt="">
-              </div>
-              <div class="flex-row flex-column brand-details">
-                <span class="brand-details--name">dangote industries limited</span>
-                <div class="flex-row flex-column brand-details--location">
-                  <span>union marble house</span>
-                  <span>1 alfred rewane road, ikoyi</span>
-                  <span>lagos</span>
+              </a>
+              <a class="brand-wrapper" href="#">
+                <div class="flex-row brand">
+                  <div class="brand-image">
+                    <img src="../assets/imgs/dangote.jpeg" alt="">
+                  </div>
+                  <div class="flex-column brand-details">
+                    <span class="brand-details--name">dangote industries limited</span>
+                    <div class="flex-column brand-details--location">
+                      <span>union marble house</span>
+                      <span>1 alfred rewane road, ikoyi</span>
+                      <span>lagos</span>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </a>
-            <a class="flex-row brand" href="#">
-              <div class="brand-image">
-                <img src="../assets/imgs/dangote.jpeg" alt="">
-              </div>
-              <div class="flex-row flex-column brand-details">
-                <span class="brand-details--name">dangote industries limited</span>
-                <div class="flex-row flex-column brand-details--location">
-                  <span>union marble house</span>
-                  <span>1 alfred rewane road, ikoyi</span>
-                  <span>lagos</span>
-                </div>
-              </div>
-            </a>
+              </a>
+            </div>
+            <button class="raised bg-blue">view all</button>
           </div>
-          <button class="raised bg-blue">view all</button>
-        </article> -->
+        </article>
       </section>
-
-      <section class="flex-row flex-column flex-center what-we-do">
-        <header>
-          <h6>What we do</h6>
+      <!--  end brands -->
+ 
+      <section class="flex-column flex-center what-we-do">
+        <header class="flex-column flex-center">
+          <hr class="bg-blue blue">
+          <h6 class="primary-text">What we do</h6>
           <span>Brandzoos is a concept dedicated to enhancing business interactions.</span>
         </header>
+        <div class="video-wrapper">
+          <a href="#">watch video</a>
+          <div class="flex-column flex-center video bg-grey-light">
+            <i class="fas fa-video fa-2x"></i>
+          </div>
+        </div>
         <div class="register">
-          <header>
-            <h6>Find and get found</h6>
+          <header class="flex-column flex-center">
+            <hr class="bg-white white">
+            <h6 class="primary-text">Find and get found</h6>
             <span>Signup easily and start using Brandzoo to promote and grow your business</span>
           </header>
           <form class="flex-row flex-center">
@@ -188,9 +216,9 @@
           </form>
         </div>
       </section>
-      <!-- end whate-we-do -->
+      <!-- end what-we-do -->
     </main>
-    <footer class="flex-row flex-column flex-center">
+    <footer class="flex-column flex-center">
       <nav>
         <ul class="flex-row flex-center">
           <li>
@@ -211,9 +239,11 @@
         </ul>
       </nav>
       <div class="newsletter">
-        <form class="flex-row flex-center">
-          <span>newsletter</span>
-          <input type="text" placeholder="E-mail">
+        <form>
+          <div class="flex-row flex-center">
+            <span>newsletter</span>
+            <input type="text" placeholder="E-mail">
+          </div>
           <button class="raised bg-brown">subscribe</button>
         </form>
       </div>
