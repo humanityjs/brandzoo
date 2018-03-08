@@ -78,6 +78,20 @@ img {
   display: inline-block;
 }
 
+.nav ul li.icon {
+  width: 40px;
+}
+
+.nav ul li.icon a {
+  margin: 0;
+}
+
+.nav ul li.icon a i {
+  top: 12px;
+  left: 0;
+  font-size: 14px;
+}
+
 .nav ul li a {
   display: block;
   color: #fff;
