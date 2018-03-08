@@ -1,21 +1,23 @@
-(function() {
-  const getListed = document.querySelector('#get-listed');
-  const overlay = document.createElement('div');
-  overlay.setAttribute('id', 'overlay');
-  overlay.innerHTML = `
-   <section class="flex-row flex-center">
-    <div>
-      <header>
-        <h6>Choose category</h6>
-        <span>some text</span>
-      </header>
-      <button>shopper</button>
-      <button>brand</button>
-    </div>
-    <div>close</div>
-   </section>
-  `
-  getListed.addEventListener('click', (event) => {
-    document.body.appendChild(overlay);
-  })
-})();
+$(document).ready(() => {
+  function toggleModal(event) {
+    $(".modal").removeClass("show-modal");
+  }
+
+  function showCategories(event) {
+    const modal = document.querySelector("#choose-category");
+    modal.classList.toggle("show-modal");
+  }
+
+  function showGetListedForm(event) {
+    const modal = document.querySelector("#get-listed-form");
+    modal.classList.toggle("show-modal");
+  }
+
+  const getListed = document.querySelector('button#get-listed');
+  const closeModal = document.querySelectorAll(".close-modal");
+  const categories = document.querySelectorAll(".category");
+
+  getListed.addEventListener('click', showCategories);
+  closeModal.forEach(closebutton => closebutton.addEventListener('click', toggleModal));
+  categories.forEach(category => category.addEventListener('click', showGetListedForm));
+});

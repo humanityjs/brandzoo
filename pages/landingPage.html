@@ -35,7 +35,7 @@
       </div>
       <div class="flex-row nav-right">
         <button class="flat blue">the selected</button>
-        <button id="get-listed" class="raised bg-blue initialism slide_open">get listed</button>
+        <button id="get-listed" class="raised bg-blue">get listed</button>
         <button class="icon blue">
           <i class="fas fa-shopping-bag fa-2x"></i>
         </button>
@@ -222,6 +222,60 @@
       <!-- end what-we-do -->
     </main>
 
+    <!-- choose category -->
+    <div id="choose-category" class="modal">
+      <div class="modal-wrapper">
+        <section class="flex-row flex-center modal-content">
+          <div class="flex-column flex-center bg-white">
+            <header class="flex-column flex-center">
+              <hr>
+              <h6>Choose category</h6>
+              <span>Some text</span>
+            </header>
+            <button class="raised category">shopper</button>
+            <button class="raised category">brand</button>
+          </div>
+          <button class="icon close-modal">
+            <i class="fas fa-times"></i>
+          </button>
+        </section>
+      </div>
+    </div>
+    <!-- end choose catgory -->
+
+    <!-- get listed -->
+    <div id="get-listed-form" class="modal">
+      <div class="modal-wrapper">
+        <section class="flex-row flex-center modal-content">
+          <div class="flex-column flex-center bg-white">
+            <header class="flex-column flex-center">
+              <hr>
+              <h6>Get listed</h6>
+              <span>Some text</span>
+            </header>
+            <form action="">
+              <input type="text" placeholder="Enter fullname">
+              <input type="text" placeholder="Enter location">
+              <input type="text" placeholder="Phone number">
+              <input type="text" placeholder="Email address">
+              <input type="text" placeholder="Password (Min 6 characters)">
+              <div>
+                <p class="small-text">By signing up, I agree to the
+                  <a href="#">Terms of Service</a>
+                </p>
+              </div>
+              <button class="raised block bg-blue">sign up</button>
+            </form>
+            <div><p class="small-text">Already have an account?
+            <a href="">Sign In</a></p></div>
+          </div>
+          <button class="icon close-modal">
+            <i class="fas fa-times"></i>
+          </button>
+        </section>
+      </div>
+    </div>
+    <!-- end get listed -->
     <footer class="flex-row flex-column flex-center">
       <nav>
         <ul class="flex-row flex-center">
