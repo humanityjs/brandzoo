@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- Fonts -->
   <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../assets/css/vendors/alertify.css">
+  <link rel="stylesheet" href="../assets/css/vendors/default.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto" rel="stylesheet">
 
   <link rel="stylesheet" href="../assets/css/landingPage.css">
@@ -32,7 +35,7 @@
       </div>
       <div class="flex-row nav-right">
         <button class="flat blue">the selected</button>
-        <button class="raised bg-blue">get listed</button>
+        <button id="get-listed" class="raised bg-blue initialism slide_open">get listed</button>
         <button class="icon blue">
           <i class="fas fa-shopping-bag fa-2x"></i>
         </button>
@@ -218,7 +221,8 @@
       </section>
       <!-- end what-we-do -->
     </main>
-    <footer class="flex-column flex-center">
+
+    <footer class="flex-row flex-column flex-center">
       <nav>
         <ul class="flex-row flex-center">
           <li>
@@ -250,5 +254,9 @@
       <span class="copyright">All rights reserved. Cotocu Integrated Services</span>
     </footer>
   </div>
+  <script src="https://code.jquery.com/jquery-1.8.2.min.js"></script>
+  <script src="../assets/js/vendors/alertify.js"></script>
+  <script src="../assets/js/vendors/jquery.popupoverlay.js"></script>
+  <script src="../assets/js/index.js"></script>
 </body>
 </html>
