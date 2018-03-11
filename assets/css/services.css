@@ -1,0 +1,46 @@
+.right>div {
+  padding: 0px 15px;
+  margin-bottom: 20px;
+}
+
+.right .services h6 {
+  color: rgb(120, 123, 126);
+  font-size: 17px;
+  padding: 10px 0px;
+  border-bottom: thin solid rgb(226, 228, 232);
+  margin-bottom: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.right .services .listings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.right .services .listings .listing {
+  flex-basis: 220px;
+  margin: 5px;
+}
+
+.right .services .listings .listing .new-product {
+  background-color: rgb(93, 162, 215);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+}
+
+.right .services .listings .listing .new-product:hover {
+  opacity: 0.8;
+  transition: opacity ease 1s;
+}
+
+.right .services .listings .listing .new-product i {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
