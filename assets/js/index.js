@@ -22,7 +22,7 @@ $(document).ready(() => {
 
   const getListed = document.querySelector('button#get-listed');
   const closeModal = document.querySelectorAll(".close-modal");
-  const categories = document.querySelectorAll(".category");
+  const categories = document.querySelectorAll("button.category");
 
   // Event listeners
   getListed.addEventListener('click', showCategories);
