@@ -17,7 +17,7 @@
 }
 
 #popular-listings section {
-  height: 100vh;
+  padding-top: 3em;
 }
 
 #popular-listings article, .section-header {
@@ -30,17 +30,17 @@
 
 .listings {
   max-width: 850px;
+  flex-wrap: wrap;
 }
 
 .listing-wrapper {
-  flex-basis: 33%;
+  flex-basis: 100%;
   padding: 1em 0.6em;
 }
 .listing {
   height: 330px;
-  padding: 1em 0.8em;
+  padding: 1em 1em;
   border: 1px solid var(--grey);
-  
 }
 .listing-rating {
   position: absolute;
@@ -66,12 +66,13 @@
   grid-template-columns: 15px 1fr;
   grid-auto-rows: 1fr;
   grid-gap: 10px;
+  align-content: flex-start;
   margin-bottom: 0.6em;
 
 }
-.listing-details--item span:nth-child(2) {
+.listing-details--item span {
   font-size: 12px;
-  line-height: 1.5em;
+  line-height: 1.4em;
 }
 .listing-name {
   color: var(--darkBlue);
@@ -89,4 +90,17 @@
 }
 .listing:hover .listing-img--overlay {
   opacity: 1;
+}
+
+/* Media queries */
+@media screen and (min-width: 768px) {
+  #popular-listings section {
+    height: 100vh;
+  }
+  .listing-wrapper {
+    flex-basis: 33%;
+  }
+  .listing {
+    padding: 1em 0.8em;
+  }
 }

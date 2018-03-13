@@ -1,12 +1,13 @@
 @import 'reset.css';
 
 html {
-  --blue: rgb(85, 157, 215);
+  --blue: rgb(36, 129, 199);
   --brown: rgb(149, 149, 149);
   --darkBlue: rgb(27, 127, 205);
   --grey: #a9a9a9;
   --greyLight: rgb(238, 234, 235);
   --orange: rgb(234, 156, 71);
+  --red: rgb(200, 25, 34);
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -33,9 +34,6 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 .bg-blue {
   background: var(--darkBlue);
 }
-.bg-white {
-  background: white;
-}
 .bg-brown {
   background: var(--brown);
 }
@@ -48,6 +46,12 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 .bg-orange {
   background: var(--orange);
 }
+.bg-red {
+  background: var(--red);
+}
+.bg-white {
+  background: white;
+}
 
 /* Font colors */
 .blue {
@@ -56,18 +60,23 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 .dark-blue {
   color: var(--darkBlue);
 }
-.orange {
-  color: var(--orange);
-}
-.white {
-  color: white;
+.grey {
+  color: var(--grey);
 }
 .light-grey {
   color: var(--greyLight);
 }
-.grey {
-  color: var(--grey);
+.orange {
+  color: var(--orange);
 }
+.red {
+  color: var(--red);
+}
+.white {
+  color: white;
+}
+
+
 
 
 /* Links */
