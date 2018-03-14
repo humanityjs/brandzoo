@@ -282,21 +282,51 @@ html {
 .dash-cont .dash-div .left ul {
   display: block;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
-.dash-cont .dash-div .left .listings .listing {
+.listings .listing {
   display: block;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   background-color: #fff;
+  position: relative;
 }
 
-.dash-cont .dash-div .left .listings .listing img {
+.listings .listing .tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: block;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 5px;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.tag.new {
+  background-color: rgb(236, 22, 57);
+}
+
+.tag.featured {
+  background-color: rgb(249, 145, 52);
+}
+
+.tag.popular {
+  background-color: rgb(28, 168, 249);
+}
+
+.tag.sponsored {
+  background-color: rgb(27, 149, 73);
+}
+
+.listings .listing img {
   max-width: 100%;
 }
 
-.dash-cont .dash-div .left .listings .listing .content {
+.listings .listing .content {
   padding: 25px 10px;
 }
 
@@ -305,20 +335,20 @@ html {
   padding: 10px;
 } */
 
-.dash-cont .dash-div .left .listings .listing .content h5 {
+.listings .listing .content h5 {
   font-size: 13px;
   color: rgb(78, 151, 211);
   border-bottom: thin solid rgb(226, 228, 232);
   padding: 5px 0;
 }
 
-.dash-cont .dash-div .left .listings .listing .content p {
+.listings .listing .content p {
   color: rgb(136, 136, 136);
   font-size: 14px;
   margin: 10px 0;
 }
 
-.dash-cont .dash-div .left .listings .listing .content span {
+.listings .listing .content span {
   font-size: 14px;
   color: rgb(78, 151, 211);
 }
@@ -358,10 +388,10 @@ html {
 }
 
 .dash-cont .dash-div .right {
-  flex-basis: 500px;
   flex: 1;
-  padding: 10px;
-  background-color: #fff;
+  flex-basis: 300px;
+  /* padding: 10px; */
+  /* background-color: #fff; */
   border: thin solid rgb(239, 240, 244);
   box-shadow: 0 1px 2px 0 rgb(239, 240, 244);
 }
@@ -370,7 +400,8 @@ html {
   min-height: 100px;
   display: flex;
   flex-wrap: wrap;
-  padding: 30px 5px 20px 5px;
+  padding: 30px 15px 20px 15px;
+  background-color: #fff;
   border-bottom: thin solid rgb(239, 240, 244);
 }
 
@@ -388,8 +419,8 @@ html {
 }
 
 .dash-cont .dash-div .right .post .post-content {
-  flex-basis: 400px;
   flex: 1;
+  flex-basis: 300px;
 }
 
 .dash-cont .dash-div .right .post .post-content .title {
@@ -420,7 +451,7 @@ html {
 }
 
 .dash-cont .dash-div .right .post .post-content .main img {
-  max-width: 400px;
+  max-width: 330px;
   margin-top: 20px;
 }
 
@@ -436,6 +467,94 @@ html {
 /*        Helpers         */
 
 /* ---------------------- */
+
+/* Buttons */
+
+button {
+  -webkit-appearance: none;
+  border: none;
+  outline: none;
+  display: inline-block;
+  height: 38px;
+  text-align: center;
+  font-size: 11px;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: rgb(149, 149, 149);
+  border-radius: 2px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+button.flat,
+button.raised {
+  padding: 0 25px;
+}
+
+button.flat {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+button.raised {
+  color: white;
+}
+
+button.raised::first-letter {
+  text-transform: capitalize;
+}
+
+button.icon {
+  padding-top: 3px;
+  margin-left: 1.5em;
+}
+
+button.block {
+  margin: 1em 0;
+}
+
+/* Input */
+
+input {
+  border: none;
+  height: 38px;
+}
+
+select {
+  border-radius: 0;
+  height: 45px;
+}
+
+input,
+select {
+  -webkit-appearance: none;
+  outline: none;
+  padding: 6px 10px;
+  background-color: #fff;
+  box-shadow: none;
+  box-sizing: border-box;
+  font-size: 1em;
+  color: var(--grey);
+}
+
+/* Flex layout */
+
+.flex-row {
+  display: flex;
+  flex: 0 1 auto;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
 
 .width-1 {
   max-width: 1100px;
@@ -527,4 +646,150 @@ html {
   padding: 5px;
   cursor: pointer;
   border: thin solid rgb(42, 187, 155);
+}
+
+/* Footer */
+
+footer {
+  padding: 0.5em 1.2em 1em;
+}
+
+footer nav ul {
+  flex-wrap: wrap;
+}
+
+footer nav ul li {
+  flex: 0 0 auto;
+  flex-basis: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 0.6em;
+}
+
+footer nav ul li a {
+  color: #a9a9a9;
+  padding: 0.5em;
+  line-height: 2em;
+}
+
+footer .newsletter span {
+  color: var(--grey);
+  font-size: 0.7em;
+  text-transform: uppercase;
+  margin-right: 0.6em;
+}
+
+footer nav ul li:last-child {
+  margin-right: 0;
+}
+
+footer .newsletter {
+  margin-bottom: 1.5em;
+}
+
+footer .newsletter form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+}
+
+footer .newsletter input {
+  background-color: rgb(238, 234, 235);
+}
+
+footer .newsletter button {
+  margin-top: 1.2em;
+  border-radius: 0px;
+}
+
+footer .copyright {
+  color: var(--grey);
+  font-size: 0.7em;
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 947px) {
+  .dash-cont {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  footer nav ul {
+    flex-wrap: nowrap;
+  }
+  footer nav ul li {
+    flex-basis: 35%;
+  }
+  article .brands-wrapper {
+    width: 80%;
+    margin: 0 auto;
+  }
+  article .brands {
+    flex-wrap: wrap;
+  }
+  article.local {
+    background: rgb(238, 239, 241);
+    padding: 3em 0em 1.5em;
+  }
+  article.local .brands {
+    margin-bottom: 1.5em;
+  }
+  article.local .brand-wrapper {
+    flex: 0 0 auto;
+    flex-basis: 50%;
+    padding: 0.5em 0.6em;
+  }
+  .video-wrapper {
+    height: 20em;
+  }
+  .register form {
+    width: 70%;
+  }
+  footer .newsletter form {
+    flex-direction: row;
+    flex: 0 1 auto;
+  }
+  footer .newsletter form input {
+    width: 250px;
+  }
+  footer .newsletter button {
+    margin-top: 0;
+  }
+  .modal-wrapper {
+    padding-top: 6em;
+  }
+  .modal-content>div {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 701px) {
+  .dash-cont .dash-div .left {
+    flex: 1;
+    margin: 30px;
+  }
+}
+
+@media screen and (max-width: 648px) {
+  .dash-cont .dash-div .left {
+    flex: 1;
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 533px) {
+  .dash-cont .dash-div .left {
+    flex: 1;
+    margin-top: 150px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .dash-cont .dash-div .left {
+    flex: 1;
+    margin-top: 300px;
+  }
 }

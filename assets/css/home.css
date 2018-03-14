@@ -236,6 +236,27 @@ img {
   margin: 0;
 }
 
+.brands-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.brand {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.brand>a {
+  flex: 1;
+  flex-basis: 100px;
+  margin: 10px;
+}
+
+.brand>a>div>img {
+  max-width: 100%;
+  max-height: 50px;
+}
+
 /* ---------------------- */
 
 /*       Listings         */
@@ -625,6 +646,23 @@ footer {
   padding: 5px;
   cursor: pointer;
   border: thin solid rgb(42, 187, 155);
+}
+
+/* Flex layout */
+
+.flex-row {
+  display: flex;
+  flex: 0 1 auto;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
 }
 
 /* .form-field.bordered {
