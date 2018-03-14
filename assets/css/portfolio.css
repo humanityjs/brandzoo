@@ -1,0 +1,69 @@
+.right>div {
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: thin solid rgb(239, 240, 244);
+  box-shadow: 0 2px 2px 0 rgb(239, 240, 244);
+}
+
+.right .portfolio h6 {
+  color: rgb(120, 123, 126);
+  font-size: 17px;
+  padding: 10px 0px;
+  border-bottom: thin solid rgb(226, 228, 232);
+  margin-bottom: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.right .portfolio .images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  flex-wrap: wrap;
+}
+
+.right .portfolio .images>div {
+  flex: 1;
+  flex-basis: 200px;
+  padding: 10px;
+  text-align: center;
+}
+
+.right .portfolio .images>div>img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 947px) {
+  .dash-cont {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 701px) {
+  .dash-cont .dash-div .left {
+    flex: 1;
+    margin: 30px;
+  }
+}
+
+@media screen and (max-width: 648px) {
+  .dash-cont .dash-div .left {
+    flex: 1;
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 533px) {
+  .dash-cont .dash-div .left {
+    flex: 1;
+    margin-top: 150px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .dash-cont .dash-div .left {
+    flex: 1;
+    margin-top: 300px;
+  }
+}

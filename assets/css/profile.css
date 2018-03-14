@@ -1,0 +1,159 @@
+.right>div {
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: thin solid rgb(239, 240, 244);
+  box-shadow: 0 2px 2px 0 rgb(239, 240, 244);
+}
+
+.right .about h6,
+.right .team h6,
+.right .equipments h6,
+.right .accreditations h6 {
+  color: rgb(120, 123, 126);
+  font-size: 17px;
+  padding: 10px 0px;
+  border-bottom: thin solid rgb(226, 228, 232);
+  margin-bottom: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.right .about p {
+  color: rgba(104, 108, 111, 0.7);
+  margin-bottom: 30px;
+  font-weight: 200;
+  line-height: 20px;
+  font-size: 15px;
+}
+
+.right .about .infos h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.right .about .infos p {
+  color: rgb(78, 151, 211);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.right .statistics {
+  padding: 30px 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right .statistics>div {
+  flex-basis: 150px;
+  flex: 1;
+}
+
+.right .statistics>div>h6 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.right .statistics>div>span {
+  font-size: 28px;
+  color: rgb(78, 151, 211);
+}
+
+.right .team .images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+
+.right .team .images img {
+  max-width: 150px;
+  height: 150px;
+  border: thin solid rgb(239, 240, 244);
+  box-shadow: 0 2px 2px 0 rgb(239, 240, 244);
+  border-radius: 100%;
+  margin: 5px 20px;
+}
+
+.right .equipments .images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+
+.right .equipments .images>div {
+  flex-basis: 200px;
+  padding: 10px;
+  text-align: center;
+}
+
+.right .equipments .images>div>img {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.right .equipments .images>div>span {
+  font-size: 17px;
+}
+
+.right .accreditations .images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  flex-wrap: wrap;
+}
+
+.right .accreditations .images>div {
+  flex-basis: 200px;
+  padding: 10px;
+  text-align: center;
+}
+
+.right .accreditations .images>div>img {
+  max-width: 100%;
+}
+
+.right .accreditations .images>div>span {
+  font-size: 17px;
+}
+
+@media screen and (max-width: 947px) {
+  .dash-cont {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 701px) {
+  .dash-cont .dash-div .left {
+    flex: 1;
+    margin: 30px;
+  }
+}
+
+@media screen and (max-width: 648px) {
+  .dash-cont .dash-div .left {
+    flex: 1;
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 533px) {
+  .dash-cont .dash-div .left {
+    flex: 1;
+    margin-top: 150px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .dash-cont .dash-div .left {
+    flex: 1;
+    margin-top: 300px;
+  }
+}
