@@ -330,7 +330,7 @@ html {
   padding: 25px 10px;
 }
 
-/* 
+/*
 .dash-cont .dash-div .left .listings .listing .content {
   padding: 10px;
 } */
@@ -791,5 +791,9 @@ footer .copyright {
   .dash-cont .dash-div .left {
     flex: 1;
     margin-top: 300px;
+  }
+  .company-details .desc .other-info .stats>div,
+  .company-details .desc .other-info .stats>div:nth-of-type(2) {
+    padding: 10px;
   }
 }

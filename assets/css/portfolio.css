@@ -60,10 +60,3 @@
     margin-top: 150px;
   }
 }
-
-@media screen and (max-width: 425px) {
-  .dash-cont .dash-div .left {
-    flex: 1;
-    margin-top: 300px;
-  }
-}
