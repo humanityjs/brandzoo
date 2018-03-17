@@ -53,10 +53,11 @@ img {
 
 .header-cont .header {
   height: 60px;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 0.5px solid rgba(6, 53, 118, 0.9);
   position: fixed;
   width: 100%;
   z-index: 999999;
+  background-color: rgba(6, 53, 118, 0.9)
 }
 
 .brand,
@@ -211,7 +212,7 @@ nav.small-screen {
   width: 100%;
   border: none;
   border-radius: none;
-  background-color: rgb(42, 187, 155);
+  background-color: rgb(174,38,52);
   height: 40px;
   color: #fff;
   padding: 5px;
@@ -577,7 +578,7 @@ footer {
 }
 
 .active a {
-  background-color: rgb(42, 187, 155);
+  background-color: rgb(174,38,52);
 }
 
 .flex {
@@ -622,7 +623,7 @@ footer {
   text-align: center;
   padding: 10px 20px;
   width: 120px;
-  background-color: rgba(0, 51, 204, 0.7);
+  background-color: rgb(174,38,52);
   color: #fff;
   text-transform: uppercase;
   border: none;
@@ -654,12 +655,12 @@ footer {
   width: 100%;
   border: none;
   border-radius: none;
-  background-color: rgb(42, 187, 155);
+  background-color: rgb(174,38,52);
   height: 40px;
   color: #fff;
   padding: 5px;
   cursor: pointer;
-  border: thin solid rgb(42, 187, 155);
+  border: thin solid rgb(174,38,52);
 }
 
 /* Flex layout */
