@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../assets/css/default.css">
   <link rel="stylesheet" href="../assets/css/home.css">
   <link rel="stylesheet" href="../assets/css/listings.css">
+  <link rel="stylesheet" href="../assets/css/tabs.css">
   <link rel="stylesheet" href="../assets/css/brandPage.css">
 </head>
 
@@ -121,16 +122,76 @@
       </div>
     </div>
   </section>
-  <section class="brand-tabs">
-    <div class="brand-tabs--wrapper">
-      <nav>
-        <ul>
-          <li class="active"><a href="">dashboard</a><span></span></li>
-          <li><a href="">products & service</a><span></span></li>
-          <li><a href="">about us</a><span></span></li>
-          <li><a href="">portfolio</a><span></span></li>
-        </ul>
-      </nav>
+  <section>
+    <div class="tabs">
+      <input type="radio" id="tab1" name="tab-control" checked>
+      <input type="radio" id="tab2" name="tab-control">
+      <input type="radio" id="tab3" name="tab-control">
+      <input type="radio" id="tab4" name="tab-control">
+      <ul class="tab-ul">
+        <li>
+          <label for="tab1" role="button">
+            <div>
+              <span>Dashboard</span>
+              <span></span>
+            </div>
+          </label>
+        </li>
+        <li>
+          <label for="tab2" role="button">
+            <div>
+              <span>product & services</span>
+              <span></span>
+            </div>
+          </label>
+        </li>
+        <li>
+          <label for="tab3" role="button">
+            <div>
+              <span>about us</span>
+              <span></span>
+            </div>
+          </label>
+        </li>
+        <li>
+          <label for="tab4" role="button">
+            <div>
+              <span>portfolio</span>
+              <span></span>
+            </div>
+          </label>
+        </li>
+      </ul>
+      <div class="divider"></div>
+      <div class="content">
+        <section id="dashboard">
+          <header>
+            <h3 class="blue">take a break.</h3>
+            <h3 class="blue">look good.</h3>
+          </header>
+          <article>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente quaerat porro libero blanditiis, reiciendis laudantium earum? Dolores, at! Dolorum, ducimus in cupiditate deserunt error ullam ad placeat earum tenetur accusamus.</p>
+          </article>
+          <a class="capitalize underline green" href="">read more</a>
+        </section>
+        <!-- end dashboard -->
+
+        <section>
+          <p>product and services</p>
+        </section>
+        <!-- end product-and-servcies -->
+
+        <section>
+          <p>about us</p>
+        </section>
+        <!-- end about us -->
+
+        <section>
+          <p>portfolio</p>
+        </section>
+        <!-- portfolio -->
+        
+      </div>
     </div>
   </section>
   <div class="divider"></div>

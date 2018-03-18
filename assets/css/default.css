@@ -38,6 +38,9 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 .text-center {
   text-align: center;
 }
+.underline {
+  text-decoration: underline;
+}
 
 /* Background colors */
 .bg-blue {
@@ -224,5 +227,15 @@ header.main-header {
   padding: 1em;
   background-color: white;
   z-index: 100;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 

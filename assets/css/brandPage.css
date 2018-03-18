@@ -59,6 +59,7 @@ li.active a {
 }
 .contact span {
   font-size: 0.8em;
+  letter-spacing: 0.025em;
   line-height: 1.4em;
 }
 .contact > div:nth-child(1) > div > span:nth-child(1) {
@@ -79,6 +80,11 @@ li.active a {
   align-items: flex-end;
   position: relative;
   height: 300px;
+}
+.large img, .mini img {
+  animation-name: fadeIn;
+  animation-duration: 5s;
+  animation-timing-function: ease-in;
 }
 .large {
   background: url('../imgs/clothes.jpg');
