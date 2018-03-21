@@ -1,0 +1,288 @@
+.about {
+  padding-top: 0;
+}
+.brand a,
+.nav ul li:not(.active) a {
+  color: var(--blue);
+}
+li.active a {
+  background: var(--blue);
+}
+.header-cont {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../imgs/hair.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.brand-page--title {
+  align-self: flex-end;
+  margin-bottom: 1em;
+}
+.brand-page--title h5 {
+  padding: 0;
+  letter-spacing: 0.20em;
+}
+.rating {
+  width: 60%;
+  margin: 0 auto 4em;
+  display: flex;
+  justify-content: space-between;
+}
+.rating span {
+  font-size: 0.8em;
+}
+.rating > div:nth-child(2) {
+  align-items: center;
+}
+.rating > div:nth-child(2) span:nth-child(1) {
+  padding: 0.2em;
+  margin-right: 0.6em;
+  color: black;
+}
+
+.contact {
+  width: 80%;
+  margin: 1em auto 0;
+  display: flex;
+  justify-content: space-between;
+}
+.contact > div {
+  flex-basis: 45%;
+}
+.contact > div > div {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 10px;
+  grid-auto-rows: 70px;
+  grid-gap: 1em;
+  margin-bottom: 0.3em;
+}
+.contact span {
+  font-size: 0.8em;
+  letter-spacing: 0.025em;
+  line-height: 1.4em;
+}
+.contact > div:nth-child(1) > div > span:nth-child(1) {
+  text-align: right;
+}
+.contact > div:nth-child(2) > div > span:nth-child(1) {
+  text-align: left;
+}
+#featured-listings button.flat {
+  border: 2px solid var(--green);
+}
+
+#brand-products {
+  width: 100%;
+}
+.large, .mini {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  height: 300px;
+}
+.large img, .mini img {
+  animation-name: fadeIn;
+  animation-duration: 5s;
+  animation-timing-function: ease-in;
+}
+.large {
+  background: url('../imgs/clothes.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.section div.mini:nth-child(1) {
+  background: url('../imgs/landing-page.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.section div.mini:nth-child(2) {
+  background: url('../imgs/hair.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.brand-product--desc {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0em 1em 0em;
+  width: 60%;
+  height: 170px;
+}
+.mini .brand-product--desc {
+  border-top: 2px solid var(--red);
+}
+.brand-product--desc header {
+  width: 100px;
+  margin-bottom: 1em;
+}
+.brand-product--desc h4 {
+  font-size: 1.4em;
+  letter-spacing: 0.040em;
+  margin-bottom: 0.5em;
+}
+.section div.mini:nth-child(2) {
+  justify-content: flex-end;
+}
+.section.large .brand-product--desc span::after {
+  content: "\f0d8";
+  font-family: "FontAwesome";
+  font-size: 3.5em;
+  position: absolute;
+  top: 0;
+  margin-top: -37px;
+  right: 0.8em;
+  color: var(--white);
+}
+.section div.mini:nth-child(1) .brand-product--desc span:first-child::after {
+  content: "\f0da";
+  font-family: "FontAwesome";
+  font-size: 3.5em;
+  position: absolute;
+  top: 1em;
+  right: 0;
+  margin-right: -18px;
+  color: var(--green);
+}
+.section div.mini:nth-child(2) .brand-product--desc span:first-child::before {
+  content: "\f0d9";
+  font-family: "FontAwesome";
+  font-size: 3.5em;
+  position: absolute;
+  top: 1em;
+  left: 0;
+  margin-left: -18px;
+  color: var(--darkBlue);
+}
+
+.section .brand-product--desc a.flat {
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 0.8em;
+  letter-spacing: 0.035em;
+}
+.offer-details {
+  margin-top: 0.5em;
+}
+.offer-details h6 {
+  font-size: 1em;
+}
+.offer-details span {
+  font-size: 11px;
+  color: var(--white);
+  opacity: 0.8;
+  margin-top: 0.4em;
+}
+
+.brand-tabs {
+
+}
+.brand-tabs--wrapper {
+
+}
+.brand-tabs--wrapper nav {
+  padding: 1em 0em 0em;
+}
+.brand-tabs--wrapper nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+.brand-tabs--wrapper nav ul li {
+  flex-basis: 50%;
+  display: inline-flex;
+  flex-direction: column;
+  align-content: center;
+  height: 3em;
+  text-transform: uppercase;
+  margin-bottom: 1.5em;
+  font-size: 0.8em;
+  line-height: 1.4em;
+}
+.brand-tabs--wrapper nav ul li a {
+  margin-bottom: 1em;
+}
+.brand-tabs--wrapper nav ul li span {
+  width: 50px;
+  height: 2px;
+}
+.brand-tabs--wrapper nav ul li.active {
+  color: var(--blue);
+}
+.brand-tabs--wrapper nav ul li.active a {
+  background: none;
+}
+.brand-tabs--wrapper nav ul li.active span {
+  background: var(--blue);
+}
+.brand-tabs--wrapper nav ul li:hover {
+  color: var(--red);
+  opacity: 0.5;
+}
+.brand-tabs--wrapper nav ul li:hover span {
+  background: var(--red);
+  opacity: 0.5;
+}
+
+@media screen and (min-width: 768px) {
+  .rating {
+    width: 45%;
+  }
+  .contact > div {
+    flex-basis: 45%;
+  }
+  .contact > div > div {
+    grid-auto-rows: 60px;
+  }
+  .contact > div:nth-child(1) {
+    padding-right: 1em;
+  }
+  .contact > div:nth-child(2) {
+    padding-left: 1em;
+  }
+  .contact > div:nth-child(2) div {
+    grid-template-columns: 15px 1fr;
+  }
+  .contact > div:nth-child(2) div span:nth-child(2) {
+    grid-column: 1;
+  }
+  .contact > div:nth-child(2) div span:nth-child(1) {
+    grid-column: 2;
+  }
+  #brand-products {
+    display: flex;
+    height: 100vh;
+  }
+  #brand-products .section {
+    flex-basis: 50%;
+    height: 100%;
+  }
+  .mini {
+    height: 50%;
+  }
+  .brand-product--desc {
+    padding: 3em 3em 3em;
+    width: 50%;
+    height: 30%;
+  }
+  .mini .brand-product--desc {
+    padding: 3em 3em 3em;
+    width: 50%;
+    height: 100%;
+  }
+  .brand-product--desc header {
+    margin-bottom: 1.5em;
+  }
+  .brand-product--desc h4 {
+    margin-bottom: 1em;
+  }
+
+  .brand-tabs--wrapper nav ul li {
+    flex-basis: 25%;
+  }
+}

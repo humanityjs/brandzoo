@@ -1,6 +1,4 @@
-@import "default.css";
-
-#popular-listings {
+#popular-listings, #featured-listings {
   --green: rgb(74, 187, 162);
   --greenOverlay: rgba(74, 187, 162, 0.5);
 }
@@ -12,15 +10,17 @@
   color: var(--green);
 }
 
-#popular-listings hr {
+#popular-listings hr, #featured-listings hr {
   width: 80px;
 }
 
-#popular-listings section {
+#popular-listings, #featured-listings {
   padding-top: 3em;
 }
 
-#popular-listings article, .section-header {
+#popular-listings article,
+#featured-listings article,
+.section-header {
   margin-bottom: 1.5em;
 }
 
@@ -94,7 +94,7 @@
 
 /* Media queries */
 @media screen and (min-width: 768px) {
-  #popular-listings section {
+  #popular-listings, #featured-listings {
     height: 100vh;
   }
   .listing-wrapper {
