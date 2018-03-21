@@ -330,7 +330,7 @@ html {
   padding: 25px 10px;
 }
 
-/* 
+/*
 .dash-cont .dash-div .left .listings .listing .content {
   padding: 10px;
 } */
@@ -373,7 +373,7 @@ html {
 }
 
 .dash-cont .dash-div .left ul li.active a {
-  background-color: rgb(78, 151, 211);
+  background-color: rgb(174,38,52);
   color: #fff;
 }
 
@@ -562,7 +562,7 @@ select {
 }
 
 .active a {
-  background-color: rgb(36, 129, 202);
+  background-color: rgb(174,38,52);
 }
 
 .flex {
@@ -607,7 +607,7 @@ select {
   text-align: center;
   padding: 10px 20px;
   width: 120px;
-  background-color: rgba(0, 51, 204, 0.7);
+  background-color: rgb(174,38,52);
   color: #fff;
   text-transform: uppercase;
   border: none;
@@ -640,12 +640,12 @@ select {
   width: 100%;
   border: none;
   border-radius: none;
-  background-color: rgb(42, 187, 155);
+  background-color: rgb(174,38,52);
   height: 40px;
   color: #fff;
   padding: 5px;
   cursor: pointer;
-  border: thin solid rgb(42, 187, 155);
+  border: thin solid rgb(174,38,52);
 }
 
 /* Footer */
@@ -791,5 +791,9 @@ footer .copyright {
   .dash-cont .dash-div .left {
     flex: 1;
     margin-top: 300px;
+  }
+  .company-details .desc .other-info .stats>div,
+  .company-details .desc .other-info .stats>div:nth-of-type(2) {
+    padding: 10px;
   }
 }

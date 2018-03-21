@@ -258,8 +258,8 @@ footer .copyright {
 
 .tabs ul li:nth-of-type(1) label span {
   display: inline-block;
-  border: thin solid rgb(36, 129, 202);
-  color: rgb(36, 129, 202);
+  border: thin solid rgb(174,38,52);
+  color: rgb(174,38,52);
   padding: 10px 15px;
   font-size: 13px;
   font-weight: 300;
@@ -267,8 +267,8 @@ footer .copyright {
 
 .tabs ul li:nth-of-type(2) label span {
   display: inline-block;
-  border: thin solid rgb(36, 129, 202);
-  color: rgb(36, 129, 202);
+  border: thin solid rgb(174,38,52);
+  color: rgb(174,38,52);
   padding: 10px 15px;
   font-size: 13px;
   font-weight: 300;
@@ -335,7 +335,7 @@ footer .copyright {
 .tabs input[name="tab-control"]:nth-of-type(1):checked~ul>li:nth-child(1)>label span {
   cursor: default;
   color: #fff;
-  background-color: rgb(36, 129, 202);
+  background-color: rgb(174,38,52);
 }
 
 .tabs input[name="tab-control"]:nth-of-type(1):checked~.content>section:nth-child(1) {
@@ -345,7 +345,7 @@ footer .copyright {
 .tabs input[name="tab-control"]:nth-of-type(2):checked~ul>li:nth-child(2)>label span {
   cursor: default;
   color: #fff;
-  background-color: rgb(36, 129, 202);
+  background-color: rgb(174,38,52);
 }
 
 .tabs input[name="tab-control"]:nth-of-type(2):checked~.content>section:nth-child(2) {
